@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+  </head>
+
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    p {
+      margin: 0;
+    }
+    .flex-1,
+    .flex-2 {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30px;
+    }
+
+    .flex-3 {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30px;
+      justify-content: space-between;
+    }
+
+    .flex-4 {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30px;
+      justify-content: space-between;
+      height: 50px;
+      border: 1px solid grey;
+      align-items: center;
+    }
+
+    .flex-5 {
+      width: 200px;
+      border: 1px solid rgb(183, 181, 181);
+      border-radius: 5px;
+    }
+    .flex-5-1 {
+      display: flex;
+      margin: 10px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .flex5-button {
+      background-color: rgb(4, 103, 225);
+      color: white;
+      border-style: none;
+      border-radius: 10px;
+      padding: 3px 9px;
+    }
+
+    .fa1 {
+      width: 200px;
+      background-color: lightblue;
+    }
+
+    .fa2 {
+      width: 75px;
+      background-color: lightgreen;
+    }
+
+    .fb1 {
+      width: 50px;
+      background-color: lightblue;
+    }
+
+    .fb2 {
+      flex: 1;
+      background-color: lightgreen;
+    }
+
+    .fb3 {
+      width: 75px;
+      background-color: lightpink;
+    }
+
+    .fc1,
+    .fc2,
+    .fc3,
+    .fc4,
+    .fd1,
+    .fd2 {
+      background-color: lightblue;
+    }
+  </style>
+  <body>
+    <div>
+      <div class="flex-1">
+        <div class="fa1">200px</div>
+        <div class="fa2">75px</div>
+      </div>
+
+      <div class="flex-2">
+        <div class="fb1">50px</div>
+        <div class="fb2">Free space</div>
+        <div class="fb3">75px</div>
+      </div>
+
+      <div class="flex-3">
+        <div class="fc1">item1</div>
+        <div class="fc2">item2</div>
+        <div class="fc3">item3</div>
+        <div class="fc4">item4</div>
+      </div>
+
+      <div class="flex-4">
+        <div class="fd1">item1</div>
+        <div class="fd2">item2</div>
+      </div>
+
+      <div class="flex-5">
+        <div class="flex-5-1">
+          <p class="flex5-home">Home</p>
+          <button class="flex5-button">14</button>
+        </div>
+        <div class="flex-5-1">
+          <p class="flex5-home">Notifications</p>
+          <button class="flex5-button">3</button>
+        </div>
+        <div class="flex-5-1">
+          <p class="flex5-home">Messages</p>
+          <button class="flex5-button">5</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
