@@ -115,3 +115,60 @@ p {
   display: block;
   margin-bottom: 10px;
 }
+
+.fb-1 {
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.profile-picture-1,
+.profile-description {
+  display: block;
+}
+
+.profile-description {
+  padding-top: 8px;
+  padding-left: 8px;
+}
+
+.fb-1 {
+  box-shadow: 0px 0px 4px 1px rgb(179, 179, 179);
+  display: inline-block;
+  margin-left: 10px;
+}
+.fb-name {
+  font-weight: bold;
+}
+
+.mutual {
+  border-radius: 50px;
+  margin-top: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mutual-2 {
+  display: inline-block;
+  vertical-align: middle;
+  color: grey;
+  margin-left: 2px;
+  font-size: 13px;
+}
+
+.add-button {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  background-color: rgb(50, 98, 255);
+  color: white;
+  border-radius: 5px;
+  border-style: none;
+  transition: background-color 0.15s, color 0.15s, box-shadow 0.15s;
+}
+
+.add-button:hover {
+  background-color: rgb(210, 205, 205);
+  color: rgb(50, 98, 255);
+  box-shadow: 0px 1px 3px 1px rgb(164, 164, 164);
+}
