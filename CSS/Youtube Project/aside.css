@@ -6,10 +6,20 @@ aside {
   color: white;
   font-size: xx-large;
   background-color: #0f0f0f;
-  width: 210px;
+  width: fit-content;
   top: 62px;
   justify-content: start;
   z-index: 96;
+}
+
+.div-container {
+  overflow: auto;
+  position: relative;
+  visibility: hidden;
+}
+
+aside:hover .div-container {
+  visibility: visible;
 }
 
 .top-side-section,
@@ -19,6 +29,7 @@ aside {
   flex-direction: column;
   margin-bottom: 20px;
   font-size: 16px;
+  visibility: visible;
 }
 
 .home-side,
@@ -68,4 +79,5 @@ aside {
   border-bottom: 1px solid rgb(112, 111, 111);
   width: 180px;
   margin-left: 10px;
+  visibility: visible;
 }
