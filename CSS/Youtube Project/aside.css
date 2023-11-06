@@ -9,6 +9,7 @@ aside {
   width: 210px;
   top: 62px;
   justify-content: start;
+  z-index: 96;
 }
 
 .top-side-section,

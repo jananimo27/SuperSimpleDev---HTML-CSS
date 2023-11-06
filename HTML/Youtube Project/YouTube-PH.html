@@ -25,7 +25,7 @@
   <style>
     section {
       display: grid;
-      grid-template-columns: 350px 350px 350px;
+      grid-template-columns: 350px 350px 350px 350px;
       column-gap: 10px;
       row-gap: 30px;
       padding-top: 70px;
@@ -40,6 +40,7 @@
       background-color: white;
       height: 300px;
       border-radius: 13px;
+      position: relative;
     }
 
     .thumbnail-1 {
@@ -60,7 +61,6 @@
       height: 100px;
       color: white;
       background-color: #0f0f0f;
-      position: relative;
     }
 
     .stockhead-1 {
@@ -99,11 +99,12 @@
       padding-left: 15px;
       border-radius: 10px;
       bottom: 0;
-      top: 50px;
+      top: 250px;
       left: 15px;
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.15s ease;
+      z-index: 95;
     }
 
     .tooltip-author {
@@ -358,9 +359,11 @@
           />
         </div>
       </div>
-      <div class="vid-1">grid 1</div>
-      <div class="vid-2">grid 2</div>
-      <div class="vid-3">grid 3</div>
+      <div class="vid-1">grid 4</div>
+      <div class="vid-2">grid 5</div>
+      <div class="vid-3">grid 6</div>
+      <div class="vid-2">grid 7</div>
+      <div class="vid-3">grid 8</div>
     </section>
   </body>
 </html>
