@@ -58,6 +58,46 @@
       padding: 3px 9px;
     }
 
+    .flex-6 {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 12px;
+      background-color: rgb(149, 100, 195);
+      color: white;
+      row-gap: 20px;
+      width: 700px;
+    }
+
+    .flex6-home {
+      width: 50px;
+    }
+
+    .flex6-search {
+      flex: 1;
+      margin-left: 50px;
+    }
+
+    .f6search {
+      border-radius: 15px;
+      border-style: none;
+      padding: 5px 15px;
+    }
+
+    .flex6-download {
+      width: 100px;
+      margin-left: 50px;
+    }
+
+    .f6download {
+      background-color: rgb(149, 100, 195);
+      color: white;
+      border-color: white;
+      border-style: solid;
+      border-width: 1px;
+      padding: 8px 10px;
+    }
     .fa1 {
       width: 200px;
       background-color: lightblue;
@@ -129,6 +169,23 @@
         <div class="flex-5-1">
           <p class="flex5-home">Messages</p>
           <button class="flex5-button">5</button>
+        </div>
+      </div>
+
+      <div class="flex-6">
+        <div class="flex6-home">
+          <p class="f6home">Home</p>
+        </div>
+        <div class="flex6-search">
+          <input
+            class="f6search"
+            type="text"
+            placeholder="Search"
+            size="50px"
+          />
+        </div>
+        <div class="flex6-download">
+          <button class="f6download">Download</button>
         </div>
       </div>
     </div>

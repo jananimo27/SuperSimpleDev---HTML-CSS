@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14e</title>
+  </head>
+  <style>
+    * {
+      font-family: arial;
+    }
+
+    body {
+      background-color: rgb(235, 234, 234);
+    }
+    .header {
+      background-color: rgb(231, 231, 231);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      align-items: center;
+      padding-right: 50px;
+      padding-left: 70px;
+      border-bottom: 1px solid grey;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .left-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .right-section {
+      width: 150px;
+      min-width: 130px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 10px;
+    }
+
+    .name {
+      margin-left: 5px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .picture {
+      border-radius: 20px;
+    }
+
+    .add-friend-button {
+      color: white;
+      background-color: rgb(0, 136, 255);
+      border-radius: 5px;
+      border-style: none;
+      padding: 5px 8px;
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+    .message-button {
+      background-color: rgb(209, 210, 210);
+      border-radius: 5px;
+      border-style: none;
+      padding: 5px 8px;
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      color: rgb(36, 35, 35);
+
+      top: 60px;
+      left: 0;
+      bottom: 0;
+    }
+
+    .left-section-2 {
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      background-color: rgb(36, 36, 36);
+    }
+
+    .right-section-2 {
+      width: 130px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(71, 71, 71);
+      color: white;
+    }
+
+    .info-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: fit-content;
+      font-size: 10px;
+      justify-content: left;
+      font-weight: bold;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+    .profile-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      margin-bottom: 5px;
+    }
+
+    .plus {
+      margin-left: 80px;
+    }
+
+    .info-section-2 {
+      font-size: 10px;
+      padding-left: 10px;
+      margin-top: 5px;
+      line-height: 15px;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 600;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img
+          class="picture"
+          src="/Images/head-1.png"
+          width="40px"
+          height="40px"
+        />
+        <p class="name">Oliver</p>
+      </div>
+
+      <div class="right-section">
+        <button class="add-friend-button">Add friend</button>
+        <button class="message-button">Message</button>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="left-section-2">
+        <img class="profile-icon" src="/Images/head-3.png" />
+        <img class="profile-icon" src="/Images/head-4.png" />
+        <img class="profile-icon" src="/Images/head-2.png" />
+      </div>
+      <div class="right-section-2">
+        <div class="info-section">
+          <p class="info">INFO</p>
+          <p class="plus">+</p>
+        </div>
+        <div class="info-section-2">
+          <p>#&nbsp;new-videos</p>
+          <p>#&nbsp;updates</p>
+          <p>#&nbsp;faq</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

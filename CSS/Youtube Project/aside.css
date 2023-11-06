@@ -1,0 +1,70 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  font-size: xx-large;
+  background-color: #0f0f0f;
+  width: 210px;
+  top: 62px;
+  justify-content: start;
+}
+
+.top-side-section,
+.middle-side-section,
+.bottom-side-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.home-side,
+.shorts-side,
+.subscription-side,
+.channel-side,
+.history-side,
+.likes-side,
+.you-profile {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.you-profile {
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.top-side-section div:hover,
+.middle-side-section div:hover,
+.bottom-side-section div:hover {
+  background-color: rgb(57, 59, 59);
+  cursor: pointer;
+}
+
+.top-side-section img,
+.middle-side-section img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.bottom-side-section img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+.separator {
+  border-bottom: 1px solid rgb(112, 111, 111);
+  width: 180px;
+  margin-left: 10px;
+}

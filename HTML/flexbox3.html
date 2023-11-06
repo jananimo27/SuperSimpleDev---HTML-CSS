@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox 3</title>
+    <link rel="stylesheet" href="/CSS/flexbox3.css" />
+  </head>
+
+  <style>
+    .f13-container {
+      width: fit-content;
+    }
+
+    .f13-picture {
+      height: 25px;
+      width: 25px;
+      border-radius: 25px;
+    }
+
+    .f13-body {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      width: 280px;
+      padding-bottom: 10px;
+    }
+
+    .f13-name {
+      font-size: 9px;
+      font-weight: bold;
+    }
+
+    .f13-overview {
+      font-size: 9px;
+      margin-top: 3px;
+    }
+
+    #hash {
+      color: grey;
+      font-weight: normal;
+    }
+
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      margin-left: 5px;
+    }
+
+    .video-preview {
+      background-color: rgb(205, 204, 204);
+      border-radius: 14% 0% 0% 12% / 10% 25% 25% 12%;
+    }
+
+    .video-info {
+      display: flex;
+      flex-direction: column;
+      padding-left: 5px;
+    }
+
+    .grid-1 {
+      display: grid;
+      grid-template-columns: 55px 1fr;
+      margin-top: 5px;
+      border: 1px solid rgb(205, 204, 204);
+      border-radius: 8px;
+      height: 40px;
+    }
+
+    .site-overview {
+      font-size: 10px;
+    }
+
+    .site {
+      font-size: 10px;
+      color: grey;
+    }
+  </style>
+
+  <body>
+    <div class="inbox">
+      <div class="inbox-header">
+        <p class="inbox-header-text">ALL INBOXES</p>
+      </div>
+      <div class="inbox-body">
+        <div class="pic">
+          <img class="profile-picture" src="/Images/head-1.png" alt="profile" />
+        </div>
+        <div class="email-body">
+          <div class="email-header-main">
+            <p class="email-header">Chewy Promotions!</p>
+            <p class="time">4:58pm</p>
+          </div>
+          <p class="email-body-1">Biggest Sales of the year!</p>
+          <p class="email-body-2">
+            Hey there! We're writing to tell you about our...
+          </p>
+        </div>
+      </div>
+      <div class="inbox-body-2">
+        <div class="pic">
+          <img class="profile-picture" src="/Images/head-4.png" alt="profile" />
+        </div>
+        <div class="email-body">
+          <div class="email-header-main">
+            <p class="email-header">Chewy Promotions!</p>
+            <p class="time">4:58pm</p>
+          </div>
+          <p class="email-body-1">Biggest Sales of the year!</p>
+          <p class="email-body-2">
+            Hey there! We're writing to tell you about our...
+          </p>
+        </div>
+      </div>
+      <div class="inbox-body-2">
+        <div class="pic">
+          <img class="profile-picture" src="/Images/head-3.png" alt="profile" />
+        </div>
+        <div class="email-body">
+          <div class="email-header-main">
+            <p class="email-header">Chewy Promotions!</p>
+            <p class="time">4:58pm</p>
+          </div>
+          <p class="email-body-1">Biggest Sales of the year!</p>
+          <p class="email-body-2">
+            Hey there! We're writing to tell you about our...
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="f13-container">
+      <div class="f13-body">
+        <div class="left-section">
+          <img class="f13-picture" src="/Images/head-3.png" />
+        </div>
+        <div class="right-section">
+          <p class="f13-name">
+            supersimple.dev <span id="hash">@SuperSimpleDev</span>
+          </p>
+          <p class="f13-overview">
+            What is backend web development? A complete overview. New video is
+            up!
+          </p>
+          <div class="grid-1">
+            <div class="video-preview"></div>
+            <div class="video-info">
+              <p class="site">youtube.com</p>
+              <p class="site-overview">
+                Backend web development - a complete overview (2021)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

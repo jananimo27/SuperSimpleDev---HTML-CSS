@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+
+    <!-- font-style: roboto from youtube official font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ////////////////////////////////////////////////////// -->
+    <link rel="icon" href="/Images/youtube-favicon.ico" />
+    <!-- Header css file -->
+    <link rel="stylesheet" href="/CSS/Youtube Project/header.css" />
+    <!-- global css file -->
+    <link rel="stylesheet" href="/CSS/Youtube Project/global.css" />
+    <!-- aside css file -->
+    <link rel="stylesheet" href="/CSS/Youtube Project/aside.css" />
+  </head>
+
+  <style>
+    section {
+      display: grid;
+      grid-template-columns: 350px 350px 350px;
+      column-gap: 10px;
+      row-gap: 30px;
+      padding-top: 70px;
+      padding-left: 220px;
+      font-size: 30px;
+      justify-content: center;
+    }
+
+    .vid-1,
+    .vid-2,
+    .vid-3 {
+      background-color: white;
+      height: 300px;
+      border-radius: 13px;
+    }
+
+    .thumbnail-1 {
+      background-color: #0f0f0f;
+    }
+    .vid-1 .thumbnail-1 img,
+    .vid-2 .thumbnail-1 img,
+    .vid-3 .thumbnail-1 img {
+      width: 100%;
+
+      border-top-right-radius: 13px;
+      border-top-left-radius: 13px;
+    }
+
+    .video-description {
+      display: grid;
+      grid-template-columns: 50px 1fr 30px;
+      height: 100px;
+      color: white;
+      background-color: #0f0f0f;
+      position: relative;
+    }
+
+    .stockhead-1 {
+      width: 36px;
+      height: 36px;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .tool-container {
+      height: fit-content;
+    }
+
+    .tool-container:hover .tooltip-profile {
+      opacity: 1;
+    }
+
+    .video-description-sub p {
+      font-size: 16px;
+    }
+
+    .dots-3 {
+      height: 5px;
+      width: 1px;
+    }
+
+    .tooltip-profile {
+      width: 200px;
+      height: 80px;
+      background-color: rgb(65, 64, 64);
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      padding-top: 10px;
+      padding-left: 15px;
+      border-radius: 10px;
+      bottom: 0;
+      top: 50px;
+      left: 15px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.15s ease;
+    }
+
+    .tooltip-author {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .tooltip-author-description {
+      display: block;
+      font-size: 16px;
+    }
+
+    .tooltip-profile-head {
+      width: 45px;
+      height: 45px;
+      border-radius: 25px;
+      margin-top: 9px;
+    }
+
+    .tooltip-section {
+      align-items: center;
+      margin-left: 13px;
+      margin-top: 12px;
+    }
+  </style>
+  <body>
+    <header>
+      <!-- left-section: burger icon & yt logo icon -->
+      <div class="left-section">
+        <div class="left-container">
+          <img
+            src="/Images/burger-white-icon.png"
+            class="burger-icon"
+            alt="setting"
+          />
+          <img src="/Images/youtube-logo.png" class="yt-logo" alt="yt-logo" />
+        </div>
+      </div>
+
+      <!-- middle-section: search bar & search icon -->
+      <div class="middle-section">
+        <div class="search-bar-container">
+          <input class="search-bar" type="text" placeholder="Search" />
+          <div class="search-icon-section">
+            <img
+              class="search-icon"
+              src="/Images/search-icon.png"
+              alt="search icon"
+            />
+            <div class="tooltip-search">Search</div>
+          </div>
+        </div>
+        <div class="voice-icon-container">
+          <button class="voice-button">
+            <img src="/Images/voice-icon.png" class="voice-icon" />
+            <div class="tooltip-voice">Search with your voice</div>
+          </button>
+        </div>
+      </div>
+
+      <!-- right-section: create icon & notification icon & profile icon -->
+      <div class="right-section">
+        <div class="right-container">
+          <div class="camera-button">
+            <img class="camera-icon" src="/Images/cam-icon.png" alt="cam" />
+            <div class="tooltip-create">Create</div>
+          </div>
+          <div class="notification-button">
+            <img
+              class="notification-icon"
+              src="/Images/notification-icon.png"
+              alt="notif"
+            />
+            <div class="tooltip-notification">Notification</div>
+          </div>
+          <img class="profile-icon" src="/Images/head-3.png" alt="profile" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Side section -->
+
+    <aside>
+      <div class="top-side-section">
+        <div class="home-side">
+          <img src="/Images/home-icon.png" alt="home" />
+          Home
+        </div>
+        <div class="shorts-side">
+          <img src="/Images/shorts-icon.png" alt="home" />
+          Shorts
+        </div>
+        <div class="subscription-side">
+          <img src="/Images/subs-icon.png" alt="home" />
+          Subscriptions
+        </div>
+      </div>
+      <div class="separator"></div>
+
+      <div class="middle-side-section">
+        <div class="you-profile">You&nbsp;&nbsp;></div>
+        <div class="channel-side">
+          <img src="/Images/channel-icon.png" alt="channel" />
+          Your Channel
+        </div>
+        <div class="history-side">
+          <img src="/Images/history-icon.png" alt="history" />
+          History
+        </div>
+        <div class="likes-side">
+          <img src="/Images/likes-icon.png" alt="like" />
+          Liked videos
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="bottom-side-section">
+        <div class="you-profile">Subscription</div>
+        <div class="channel-side">
+          <img src="/Images/stock1.png" alt="channel" />
+          Elijah Bonelli
+        </div>
+        <div class="history-side">
+          <img src="/Images/stock2.png" alt="history" />
+          MemeReviews
+        </div>
+        <div class="likes-side">
+          <img src="/Images/stock3.png" alt="like" />
+          TheFoodieChannel
+        </div>
+      </div>
+    </aside>
+
+    <section>
+      <div class="vid-1">
+        <div class="thumbnail-1">
+          <img src="/Images/yt-1.webp" alt="yt-1" />
+        </div>
+        <div class="video-description">
+          <div class="tool-container">
+            <img
+              class="stockhead-1"
+              src="/Images/stock-head-1.jpg"
+              alt="stock-head-1"
+            />
+            <div class="tooltip-profile">
+              <img
+                class="tooltip-profile-head"
+                src="/Images/stock-head-1.jpg"
+                alt="stock-head-1"
+              />
+              <div class="tooltip-section">
+                <p class="tooltip-author">RealLife Lore</p>
+                <p class="tooltip-author-description">200k subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-description-sub">
+            <p>How the US & China Are Preparing to Fight Total War</p>
+            <p style="font-size: 14px; color: #aaaaaa; margin-top: 15px">
+              RealLife Lore
+            </p>
+            <p style="font-size: 14px; color: #aaaaaa; margin-top: 5px">
+              3.2M views &middot; 1 month ago
+            </p>
+          </div>
+          <img
+            style="height: 24px; width: 25px"
+            src="/Images/dots-3.png"
+            alt="3dots"
+          />
+        </div>
+      </div>
+      <div class="vid-2">
+        <div class="thumbnail-1">
+          <img src="/Images/yt-3.webp" alt="yt-1" />
+        </div>
+        <div class="video-description">
+          <div class="tool-container">
+            <img
+              class="stockhead-1"
+              src="/Images/stock-head-3.jpg"
+              alt="stock-head-1"
+            />
+            <div class="tooltip-profile">
+              <img
+                class="tooltip-profile-head"
+                src="/Images/stock-head-3.jpg"
+                alt="stock-head-1"
+              />
+              <div class="tooltip-section">
+                <p class="tooltip-author">Nico Leonard</p>
+                <p class="tooltip-author-description">1.58M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-description-sub">
+            <p>
+              Watch Expert CRITIQUES John Mayer & Ed Sheeran Talking Watches
+            </p>
+            <p style="font-size: 14px; color: #aaaaaa; margin-top: 15px">
+              Nico Leonard
+            </p>
+            <p style="font-size: 14px; color: #aaaaaa; margin-top: 5px">
+              558k views &middot; 2 weeks ago
+            </p>
+          </div>
+          <img
+            style="height: 24px; width: 25px"
+            src="/Images/dots-3.png"
+            alt="3dots"
+          />
+        </div>
+      </div>
+      <div class="vid-3">
+        <div class="thumbnail-1">
+          <img src="/Images/yt-2.webp" alt="yt-1" />
+        </div>
+        <div class="video-description">
+          <div class="tool-container">
+            <img
+              class="stockhead-1"
+              src="/Images/stock-head-2.jpg"
+              alt="stock-head-2"
+            />
+            <div class="tooltip-profile">
+              <img
+                class="tooltip-profile-head"
+                src="/Images/stock-head-2.jpg"
+                alt="stock-head-1"
+              />
+              <div class="tooltip-section">
+                <p class="tooltip-author">The Friday Checkout</p>
+                <p class="tooltip-author-description">160k subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-description-sub">
+            <p>Windows 12 is looking good!</p>
+            <p style="font-size: 14px; color: #aaaaaa; margin-top: 15px">
+              The Friday Checkout
+            </p>
+            <p style="font-size: 14px; color: #aaaaaa; margin-top: 5px">
+              364k views &middot; 2 weeks ago
+            </p>
+          </div>
+          <img
+            style="height: 24px; width: 25px"
+            src="/Images/dots-3.png"
+            alt="3dots"
+          />
+        </div>
+      </div>
+      <div class="vid-1">grid 1</div>
+      <div class="vid-2">grid 2</div>
+      <div class="vid-3">grid 3</div>
+    </section>
+  </body>
+</html>

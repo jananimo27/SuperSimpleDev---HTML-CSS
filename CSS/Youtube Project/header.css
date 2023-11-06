@@ -1,0 +1,246 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  height: 56px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  z-index: 100;
+  background-color: #0f0f0f;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+
+.left-section {
+  margin-left: 20px;
+}
+
+.middle-section {
+  align-items: center;
+  width: 700px;
+  min-width: 450px;
+  flex: 1;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 70px;
+}
+
+.right-section {
+  width: 150px;
+  margin-right: 20px;
+  color: white;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.burger-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.yt-logo {
+  width: 130px;
+  height: 45px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.search-bar-container {
+  border: 1px solid rgb(112, 111, 111);
+  background-color: hsl(0, 0%, 7%);
+  padding-left: 20px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  border-radius: 30px;
+  height: 30px;
+  width: 600px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: width 0.15s ease;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar {
+  flex: 1;
+  width: 540px;
+  border-style: none;
+  background-color: hsl(0, 0%, 7%);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: white;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.search-icon {
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  cursor: pointer;
+}
+
+.search-bar-container:has(.search-bar:focus) {
+  border: 1px solid rgb(0, 106, 255);
+  width: 700px;
+}
+
+.search-icon-section {
+  position: relative;
+  align-items: center;
+  vertical-align: middle;
+  width: 50px;
+  height: 36px;
+  border: 1px solid rgb(112, 111, 111);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: rgb(39, 39, 39);
+  right: -3px;
+  bottom: -0.6px;
+}
+
+.voice-icon-container {
+  cursor: pointer;
+  background-color: #0f0f0f;
+  margin-right: 10px;
+}
+
+.voice-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  background-color: rgb(45, 45, 45);
+  border-radius: 100px;
+  padding: 7px;
+  vertical-align: middle;
+  transition: background-color 0.3s ease;
+}
+
+.voice-icon:hover {
+  background-color: rgb(75, 75, 75);
+}
+
+.voice-button {
+  background-color: #0f0f0f;
+  border-style: none;
+  position: relative;
+  margin-left: 10px;
+}
+
+.tooltip-voice {
+  position: absolute;
+  color: white;
+  left: -38px;
+  bottom: -40px;
+  white-space: nowrap;
+  background-color: grey;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.tooltip-search {
+  position: absolute;
+  color: white;
+  bottom: -40px;
+  white-space: nowrap;
+  background-color: grey;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.tooltip-create {
+  position: absolute;
+  color: white;
+  bottom: -35px;
+  right: -5px;
+  white-space: nowrap;
+  background-color: grey;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.tooltip-notification {
+  position: absolute;
+  color: white;
+  bottom: -35px;
+  right: -20px;
+  white-space: nowrap;
+  background-color: grey;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.voice-button:hover .tooltip-voice,
+.search-icon-section:hover .tooltip-search,
+.camera-button:hover .tooltip-create,
+.notification-button:hover .tooltip-notification {
+  opacity: 1;
+}
+
+.camera-button,
+.notification-button {
+  margin-top: 2px;
+  position: relative;
+}
+
+.camera-icon,
+.notification-icon {
+  width: 28px;
+  height: 28px;
+  padding: 7px;
+  border-radius: 50px;
+}
+
+.camera-icon:hover,
+.notification-icon:hover {
+  background-color: #555;
+}
+
+.profile-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 22px;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 34px;
+  justify-content: space-between;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14b</title>
+  </head>
+
+  <style>
+    * {
+      font-family: arial;
+    }
+    body {
+      height: 1000px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .right-sidebar {
+      background-color: green;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100px;
+      position: fixed;
+    }
+
+    .inner-modal {
+      display: flex;
+      flex-direction: column;
+      width: 270px;
+      height: 80px;
+      justify-content: space-between;
+      border: 1px solid grey;
+      padding: 20px;
+      background-color: white;
+      position: fixed;
+      top: 100px;
+      right: 60px;
+      border-radius: 5px;
+    }
+
+    .close-button {
+      width: 50px;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title {
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <div class="right-sidebar">right sidebar</div>
+    <div class="overlay">
+      <div class="inner-modal">
+        <p class="title">Modal Title</p>
+        <p class="title-2">This is a modal</p>
+        <button class="close-button">Close</button>
+      </div>
+    </div>
+  </body>
+</html>
